@@ -389,7 +389,7 @@
       # Run tools/clang/scripts/update.sh to make sure they are compiled.
       # This causes 'clang_chrome_plugins_flags' to be set.
       # Has no effect if 'clang' is not set as well.
-      'clang_use_chrome_plugins%': 1,
+      'clang_use_chrome_plugins%': 0,
 
       # Enable building with ASAN (Clang's -fsanitize=address option).
       # -fsanitize=address only works with clang, but asan=1 implies clang=1
@@ -2492,7 +2492,7 @@
         }],
       ],
       'clang_warning_flags': [
-        '-Wheader-hygiene',
+        #'-Wheader-hygiene',
 
         # Don't die on dtoa code that uses a char as an array index.
         # This is required solely for base/third_party/dmg_fp/dtoa.cc.
@@ -2508,7 +2508,7 @@
         '-Wno-covered-switch-default',
 
         # Warns when a const char[] is converted to bool.
-        '-Wstring-conversion',
+        #'-Wstring-conversion',
 
         # C++11-related flags:
 
