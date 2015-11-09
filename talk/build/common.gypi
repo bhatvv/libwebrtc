@@ -89,7 +89,7 @@
               # LateBindingSymbolTable::TableInfo from
               # latebindingsymboltable.cc.def and remove below flag.
               '-Wno-address-of-array-temporary',
-              '-Wthread-safety',
+              #'-Wthread-safety',
             ],
           }],
         ],

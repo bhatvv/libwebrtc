@@ -240,7 +240,7 @@
           }],
           ['clang==1', {
             'cflags': [
-              '-Wthread-safety',
+             # '-Wthread-safety',
             ],
           }],
         ],
